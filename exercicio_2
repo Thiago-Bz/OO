@@ -1,0 +1,26 @@
+package exercicio_2;
+
+class Pessoa {
+	int idade,peso;
+	String nome;
+	float altura, IMC;
+	
+	public Pessoa(int id, int pes, float h, String nome){
+		this.idade = id;
+		this.peso = pes;
+		this.nome = nome;
+		this.altura = h;
+		
+	}
+	
+	public float calculaIMC() {
+		return this.IMC = (peso)/((altura)*(altura));
+	}
+	
+	public String situacao() {
+		if (this.IMC < 18.5) {
+			this.situação = "Baixo peso";
+		}
+		
+	}
+}
